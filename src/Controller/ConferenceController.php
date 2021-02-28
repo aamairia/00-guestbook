@@ -10,12 +10,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class ConferenceController extends AbstractController
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/hello/{name}", name="homepage")
      */
-    public function index(Request $request): Response
+    public function index(string $name = ''): Response
     {
         $greet = '';
-        if($name = $request->query->get('hello')){
+        if($name){
             $greet = sprintf('Hello %s!', htmlspecialchars($name));
         }
         return new Response(<<<EOF
@@ -23,7 +23,7 @@ class ConferenceController extends AbstractController
 <html>
     <body>
     $greet
-        <img src="images/under-construction.gif" />
+        <img src="/images/under-construction.gif" />
     </body>
 </html>
 EOF
