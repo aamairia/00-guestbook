@@ -35,11 +35,16 @@ class ConferenceController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function show(Environment $twig, Conference $conference, CommentRepository $commentRepository) : Response
+    public function show(Request $request, Environment $twig, Conference $conference, CommentRepository $commentRepository) : Response
     {
+        $offset = max(0, $request->query->getInt('offset', 0));
+        $paginator = $commentRepository->getCommentPaginator($conference, $offset);
+
         return new Response($twig->render('conference/show.html.twig', [
             'conference' => $conference,
-            'comments' => $commentRepository->findBy(['conference' => $conference], ['createdAt' => 'DESC'])
+            'comments' => $paginator,
+            'previous' => $offset - $commentRepository::PAGINATOR_PER_PAGE,
+            'next'     => min(count($paginator), $offset + $commentRepository::PAGINATOR_PER_PAGE)
         ]));
     }
 
