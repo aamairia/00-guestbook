@@ -51,3 +51,17 @@ S
 #templates/conference/show.html.twig,a/4/a48baca5794b04828eba6e36cccf01fe2fbedf7a
 W
 'src/Controller/ConferenceController.php,4/0/400bd9e029039d74fe3934c584894244ed648e70
+D
+.symfony/routes.yaml,a/2/a22cb6fab9053578cb2659365e279f7fc9978f44
+C
+docker-compose.yaml,e/f/ef8def03dc8f162799089e9b5f4321201c8810d5
+Q
+!config/packages/prod/monolog.yaml,8/3/83f5d16a805da307fff77225b9a32f12d6994916
+P
+ config/packages/dev/monolog.yaml,f/6/f63290018beb42ebcfa2451e9cb8d74deaa0aedc
+M
+config/packages/doctrine.yaml,8/4/8407b4a9f249ef233d425138c0e8540c756c614a
+[
++src/EventSubscriber/TwigEventSubscriber.php,a/e/ae902c6993823b9a31041b62ba8e107a8ef0943a
+W
+'src/Repository/ConferenceRepository.php,5/9/59a9c1b8ba04ce89cf8fe56b971cc950db2b3eaa
