@@ -65,3 +65,9 @@ M
 +src/EventSubscriber/TwigEventSubscriber.php,a/e/ae902c6993823b9a31041b62ba8e107a8ef0943a
 W
 'src/Repository/ConferenceRepository.php,5/9/59a9c1b8ba04ce89cf8fe56b971cc950db2b3eaa
+T
+$migrations/Version20210302173119.php,f/a/fa460b85c7d3257f45f57c970333d0724362abc3
+_
+/src/EntityListener/ConferenceEntityListener.php,e/6/e698155cfabd72de80d446165595b1a6357de431
+L
+src/Form/CommentFormType.php,a/6/a61f789a81a70d781c8006bf3b6698400524e2c1
