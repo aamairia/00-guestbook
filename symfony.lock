@@ -109,9 +109,6 @@
     "nikic/php-parser": {
         "version": "v4.10.4"
     },
-    "pagerfanta/pagerfanta": {
-        "version": "v2.7.0"
-    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -196,9 +193,6 @@
     },
     "symfony/event-dispatcher-contracts": {
         "version": "v2.2.0"
-    },
-    "symfony/expression-language": {
-        "version": "v5.1.11"
     },
     "symfony/filesystem": {
         "version": "v5.0.11"
@@ -311,6 +305,9 @@
     "symfony/polyfill-php80": {
         "version": "v1.22.1"
     },
+    "symfony/polyfill-uuid": {
+        "version": "v1.22.1"
+    },
     "symfony/profiler-pack": {
         "version": "v1.0.5"
     },
@@ -405,6 +402,9 @@
     },
     "symfony/twig-pack": {
         "version": "v1.0.1"
+    },
+    "symfony/uid": {
+        "version": "v5.1.11"
     },
     "symfony/validator": {
         "version": "4.3",
